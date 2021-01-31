@@ -1,0 +1,35 @@
+{
+    "manifest_version": 2,
+    "name": "adblock",
+    "version": "1.0",
+
+    "author": "Jack Chan",
+    "description": "Adblocker that doesn't get detected",
+    "icons": {
+        "16": "adblock.png",
+        "32": "adblock.png",
+        "48": "adblock.png",
+        "128": "adblock.png"
+      },
+
+    "browser_action": {
+        "default_icon": "adblock.png",
+        "default_popup": "popup.html",
+        "default_title": "adblock"
+    },
+
+    "background" : {
+        "scripts": ["blockedSites.js", "adblock.js"],
+        "persistent": true
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["http://*/", "https://*/", "<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+
+    "permissions": ["webRequest", "webRequestBlocking", "http://*/", "https://*/"]
+
+}

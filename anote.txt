@@ -1,0 +1,6 @@
+Settings -> Extensions
+Check Developer mode
+Load unpacked -> select workspace folder
+Settings -> Extensions -> click icon to refresh from latest code
+
+
