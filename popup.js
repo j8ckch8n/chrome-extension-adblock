@@ -1,5 +1,6 @@
-console.log("hello from the popup script")
+console.log("hello from the adblock popup script")
 
+/*
 document.addEventListener("DOMContentLoaded", function () {
     document.querySelector('button').addEventListener('click', onclick, false)
     function onclick() {
@@ -10,3 +11,4 @@ document.addEventListener("DOMContentLoaded", function () {
         )
     }
 }, false)
+*/

@@ -3,9 +3,8 @@
 
 ## Installation Instructions
 **Google Chrome**
-1. Download this repo as a [ZIP file from GitHub](https://github.com/nang149/adblock-extension-nodetect/archive/master.zip).
-2. Unzip the file and you should have a folder named `adblock-extension-nodetect-master`.
-3. In Chrome go to the extensions page (`chrome://extensions`).
-4. Enable Developer Mode.
-5. Drag the `adblock-extension-nodetect-master` folder onto anywhere on the Chrome page to import it! (do not delete the folder afterwards)
-6. Enjoy!
+1. Clone repo from GitHub https://github.com/j8ckch8n/chrome-extension-adblock
+2. In Chrome go to the extensions page (`chrome://extensions`).
+3. Enable Developer Mode.
+4. Drag the `chrome-extension-adblock` folder onto anywhere on the Chrome page to import it! (do not delete the folder afterwards)
+5. Enjoy!

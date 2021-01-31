@@ -1,4 +1,4 @@
-console.log("hello from background script")
+//console.log("hello from the adblock background script")
 
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
