@@ -1,10 +1,20 @@
 //console.log("hello from the adblock background script")
 
+const BLOCKING_RESPONSE = {
+    cancel: true
+}
+
+const FILTER = {
+    urls: blocked_sites
+}
+
+const EXTRA_INFO_SPEC = ["blocking"]
+
 chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
         console.log("I am going to block:", details.url)
-        return {cancel: true}
+        return BLOCKING_RESPONSE
     },
-    {urls: blocked_sites},
-    ["blocking"]
+    FILTER,
+    EXTRA_INFO_SPEC
 )
